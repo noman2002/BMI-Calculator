@@ -15,25 +15,27 @@ class _InputPageState extends State<InputPage> {
       body: Column(
         children: [
           Expanded(
-            flex: 2,
-            child: Container(
-              margin: EdgeInsets.all(15),
-              decoration: BoxDecoration(
-                color: Color(0xFF1D1E33),
-                borderRadius: BorderRadius.circular(10),
-              ),
+            child: Row(
+              children: [
+                Container(
+                  margin: EdgeInsets.all(15),
+                  decoration: BoxDecoration(
+                    color: Color(0xFF1D1E33),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.all(15),
+                  decoration: BoxDecoration(
+                    color: Color(0xFF1D1E33),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                ),
+              ],
             ),
           ),
-          Expanded(
-            flex: 2,
-            child: Container(
-              margin: EdgeInsets.all(15),
-              decoration: BoxDecoration(
-                color: Color(0xFF1D1E33),
-                borderRadius: BorderRadius.circular(10),
-              ),
-            ),
-          ),
+          Expanded(child: Row()),
+          Expanded(child: Row()),
         ],
       ),
       floatingActionButton: FloatingActionButton(
