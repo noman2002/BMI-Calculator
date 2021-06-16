@@ -17,25 +17,62 @@ class _InputPageState extends State<InputPage> {
           Expanded(
             child: Row(
               children: [
-                Container(
-                  margin: EdgeInsets.all(15),
-                  decoration: BoxDecoration(
-                    color: Color(0xFF1D1E33),
-                    borderRadius: BorderRadius.circular(10),
+                Expanded(
+                  child: Container(
+                    margin: EdgeInsets.all(15),
+                    decoration: BoxDecoration(
+                      color: Color(0xFF1D1E33),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
                   ),
                 ),
-                Container(
-                  margin: EdgeInsets.all(15),
-                  decoration: BoxDecoration(
-                    color: Color(0xFF1D1E33),
-                    borderRadius: BorderRadius.circular(10),
+                Expanded(
+                  child: Container(
+                    margin: EdgeInsets.all(15),
+                    decoration: BoxDecoration(
+                      color: Color(0xFF1D1E33),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
                   ),
                 ),
               ],
             ),
           ),
-          Expanded(child: Row()),
-          Expanded(child: Row()),
+          Expanded(
+            child: Expanded(
+              child: Container(
+                margin: EdgeInsets.all(15),
+                decoration: BoxDecoration(
+                  color: Color(0xFF1D1E33),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+              ),
+            ),
+          ),
+          Expanded(
+            child: Row(
+              children: [
+                Expanded(
+                  child: Container(
+                    margin: EdgeInsets.all(15),
+                    decoration: BoxDecoration(
+                      color: Color(0xFF1D1E33),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                ),
+                Expanded(
+                  child: Container(
+                    margin: EdgeInsets.all(15),
+                    decoration: BoxDecoration(
+                      color: Color(0xFF1D1E33),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
         ],
       ),
       floatingActionButton: FloatingActionButton(
