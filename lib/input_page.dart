@@ -26,15 +26,22 @@ class _InputPageState extends State<InputPage> {
                   child: ReusableCard(
                     colour: activeCardColor,
                     cardChild: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Icon(
                           FontAwesomeIcons.mars,
                           size: 80,
                         ),
                         SizedBox(
-                          height: 5,
+                          height: 15,
                         ),
-                        Text("Male")
+                        Text(
+                          "Male",
+                          style: TextStyle(
+                            fontSize: 18,
+                            color: Color(0xFF8D8E98),
+                          ),
+                        ),
                       ],
                     ),
                   ),
