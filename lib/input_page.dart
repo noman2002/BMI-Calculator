@@ -86,14 +86,13 @@ class _InputPageState extends State<InputPage> {
                       ),
                       Text(
                         "cm",
-                        
                         style: kLabelTextStyle,
                       ),
                     ],
                   ),
                   Slider(
                       value: height.toDouble(),
-                      min: 0.0,
+                      min: 100.0,
                       max: 220.0,
                       activeColor: Color(0xFFEB1555),
                       inactiveColor: Color(0xFF8D8E98),
