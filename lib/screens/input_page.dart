@@ -1,3 +1,4 @@
+import 'package:bmi_calculator/calculator_brain.dart';
 import 'package:bmi_calculator/components/bottom_button.dart';
 import 'package:bmi_calculator/components/icon_content.dart';
 import 'package:bmi_calculator/components/reusable_card.dart';
@@ -211,8 +212,15 @@ class _InputPageState extends State<InputPage> {
           ),
           BottomButton(
             onTap: () {
+              CalculatorBrain calc =
+                  CalculatorBrain(height: height, weight: weight);
+
               Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return ResultsPage();
+                return ResultsPage(
+                  bmiResult: calc.calcBMI(),
+                  ResultText: calc.getResult(),
+                  interpretation: calc.getInterpretation(),
+                );
               }));
             },
             buttonTittle: "CALCULATE",
@@ -222,6 +230,3 @@ class _InputPageState extends State<InputPage> {
     );
   }
 }
-
-
-

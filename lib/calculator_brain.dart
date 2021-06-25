@@ -34,6 +34,6 @@ getInterpretation(){
       return 'You have a lower than normal body weight. Stay safe during wind 😁. By the way try eating more. ';
     }
 }
-
+ 
 
 }
