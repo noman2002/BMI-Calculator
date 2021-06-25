@@ -27,11 +27,11 @@ class CalculatorBrain {
 
 getInterpretation(){
    if (_bmi! >= 25) {
-      return 'You have a higher ';
+      return 'You have a higher than normal body weight. But still you are look cute. May be You can workout.';
     } else if (_bmi! > 18.5) {
-      return 'Normal';
+      return 'You have a normal body weight. Thats good. Keep it up';
     } else {
-      return 'Underweight';
+      return 'You have a lower than normal body weight. Stay safe during wind 😁. By the way try eating more. ';
     }
 }
 
