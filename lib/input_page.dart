@@ -94,6 +94,7 @@ class _InputPageState extends State<InputPage> {
                     data: SliderTheme.of(context).copyWith(
                         thumbColor: Color(0xFFEB1555),
                         overlayColor: Color(0x29EB1555),
+                        inactiveTrackColor:Color(0xFF8D8E98) ,
                         activeTrackColor: Colors.white,
                         thumbShape:
                             RoundSliderThumbShape(enabledThumbRadius: 15.0),
@@ -103,7 +104,7 @@ class _InputPageState extends State<InputPage> {
                         value: height.toDouble(),
                         min: 100.0,
                         max: 220.0,
-                        inactiveColor: Color(0xFF8D8E98),
+                       
                         onChanged: (double newValue) {
                           setState(() {
                             height = newValue.round();
