@@ -1,4 +1,3 @@
-import 'package:bmi_calculator/admobHelper.dart';
 import 'package:bmi_calculator/calculator_brain.dart';
 import 'package:bmi_calculator/components/bottom_button.dart';
 import 'package:bmi_calculator/components/icon_content.dart';
@@ -24,7 +23,6 @@ class _InputPageState extends State<InputPage> {
   int height = 180;
   int weight = 30;
   int age = 18;
-  AdmobHelper admobHelper = new AdmobHelper();
 
   @override
   Widget build(BuildContext context) {
@@ -214,9 +212,6 @@ class _InputPageState extends State<InputPage> {
           ),
           BottomButton(
             onTap: () {
-              admobHelper.createInterad();
-              admobHelper.showInterad();
-
               CalculatorBrain calc =
                   CalculatorBrain(height: height, weight: weight);
 
