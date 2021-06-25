@@ -172,8 +172,13 @@ class _InputPageState extends State<InputPage> {
 }
 
 class RoundIconButton extends StatelessWidget {
-  RoundIconButton({this.icon, Key? key}) : super(key: key);
+  RoundIconButton({
+    this.icon,
+    this.onPressed,
+    Key? key,
+  }) : super(key: key);
   final IconData? icon;
+  final Function? onPressed;
   @override
   Widget build(BuildContext context) {
     return RawMaterialButton(
