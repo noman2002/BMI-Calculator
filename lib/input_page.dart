@@ -178,7 +178,7 @@ class RoundIconButton extends StatelessWidget {
     Key? key,
   }) : super(key: key);
   final IconData? icon;
-  final Function? onPressed;
+  final Function()? onPressed;
   @override
   Widget build(BuildContext context) {
     return RawMaterialButton(
@@ -190,7 +190,7 @@ class RoundIconButton extends StatelessWidget {
       ),
       shape: CircleBorder(),
       fillColor: Color(0xFF4C4D5E),
-      onPressed: () {},
+      onPressed: onPressed,
     );
   }
 }
