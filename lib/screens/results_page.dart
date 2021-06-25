@@ -43,15 +43,15 @@ class ResultsPage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Text(
-                    "Normal",
+                    resultText!.toUpperCase(),
                     style: kResultTextStyle,
                   ),
                   Text(
-                    "18.3",
+                    bmiResult!,
                     style: kBMITextStyle,
                   ),
                   Text(
-                    "Your BMI is low eat more",
+                    interpretation!,
                     textAlign: TextAlign.center,
                     style: kBodyTextStyle,
                   ),
