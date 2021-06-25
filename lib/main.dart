@@ -1,7 +1,11 @@
+import 'package:bmi_calculator/admobHelper.dart';
 import 'package:bmi_calculator/screens/input_page.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(BMICalculator());
+void main() {
+  AdmobHelper.initialization();
+  runApp(BMICalculator());
+}
 
 class BMICalculator extends StatelessWidget {
   @override
