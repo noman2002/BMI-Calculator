@@ -1,4 +1,5 @@
 import 'package:bmi_calculator/constants.dart';
+import 'package:bmi_calculator/reusable_card.dart';
 import 'package:flutter/material.dart';
 
 class ResultsPage extends StatelessWidget {
@@ -12,12 +13,39 @@ class ResultsPage extends StatelessWidget {
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Expanded(
             child: Container(
               child: Text(
                 "Your Result",
                 style: kTittleTextStyle,
+              ),
+            ),
+          ),
+          Expanded(
+            flex: 5,
+            child: ReusableCard(
+              colour: kActiveCardColor,
+              cardChild: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Text(
+                    "Normal",
+                    style: kResultTextStyle,
+                  ),
+                  Text(
+                    "18.3",
+                    style: kBMITextStyle,
+                  ),
+                  Text(
+                    "Your BMI is low eat more",
+                    textAlign: TextAlign.center,
+                    style: kBodyTextStyle,
+                  ),
+                   
+                ],
               ),
             ),
           ),
