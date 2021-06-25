@@ -135,18 +135,15 @@ class _InputPageState extends State<InputPage> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            RoundIconButton(),
+                            RoundIconButton(
+                              icon: FontAwesomeIcons.minus,
+                            ),
                             SizedBox(
                               width: 10,
                             ),
-                            FloatingActionButton(
-                              backgroundColor: Color(0xFF4C4F5E),
-                              child: Icon(
-                                Icons.add,
-                                color: Colors.white,
-                              ),
-                              onPressed: () {},
-                            ),
+                            RoundIconButton(
+                              icon: FontAwesomeIcons.plus,
+                            )
                           ],
                         ),
                       ],
