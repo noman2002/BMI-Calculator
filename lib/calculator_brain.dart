@@ -24,4 +24,16 @@ class CalculatorBrain {
       return 'Underweight';
     }
   }
+
+getInterpretation(){
+   if (_bmi! >= 25) {
+      return 'You have a higher ';
+    } else if (_bmi! > 18.5) {
+      return 'Normal';
+    } else {
+      return 'Underweight';
+    }
+}
+
+
 }
